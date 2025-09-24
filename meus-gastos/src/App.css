@@ -1,0 +1,45 @@
+:root{
+  --color-h1: #282828;
+}
+.login-bg {
+  width: 751px;
+  height: 804px;
+}
+.login-bg .input-container input:focus {
+  border: 2px solid #767676;
+  outline: none;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+}
+.login-title{
+  font: 600 40px 'Poppins';
+  text-align: center;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-area{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.textFinal{
+  font: 500 20px 'Poppins', sans-serif;
+}

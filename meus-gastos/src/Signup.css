@@ -1,0 +1,34 @@
+:root{
+  --color-h1: #282828;
+  --error-text: #d93025;
+}
+.signup-bg {
+  width: 751px;
+  height: 1050px;
+}
+.signup-bg .input-container input:focus {
+  border: 2px solid #767676;
+  outline: none;
+}
+.title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: var(--color-h1);
+}
+.signup-title{
+  font: 600 40px 'Poppins';
+  text-align: center;
+}
+.error-text{
+  color: var(--error-text);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+  display: block;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
