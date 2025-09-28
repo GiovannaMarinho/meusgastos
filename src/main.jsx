@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Signup from "./Signup";
@@ -7,9 +7,11 @@ import ForgotPassword from "./ForgotPassword";
 
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.MODE === "production" ? "/meusgastos" : "/"}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/signup" element={<Signup />} />
